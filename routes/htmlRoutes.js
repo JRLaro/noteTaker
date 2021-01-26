@@ -1,5 +1,4 @@
-var path = require("path");
-// const index = require("../public/assets/js/index");
+const path = require("path");
 
 //html get request
 module.exports = function (app) {
