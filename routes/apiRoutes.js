@@ -2,6 +2,7 @@
 
 module.exports = function (app) {
     app.get("/api/notes", function (req, res) {
+        fs.readFile("/")
         res.json(activeNote);
 
     });
@@ -13,9 +14,4 @@ module.exports = function (app) {
     app.delete("/api/notes/:id", function (req, res) {
         res.json("db.json");
     });
-
-
-
-
-
 };
