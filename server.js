@@ -17,8 +17,8 @@ require("./routes/htmlRoutes")(app);
 
 
 // starting the server
-// app.listen(PORT, () => console.log(`You are now listening on Port: ${PORT}`));
+app.listen(PORT, () => console.log(`You are now listening on Port: ${PORT}`));
 
-app.listen(PORT, function (req, res) {
-    console.log(`You are now listening on Port: ${PORT}`)
-});
+// app.listen(PORT, function (req, res) {
+//     console.log(`You are now listening on Port: ${PORT}`)
+// });
