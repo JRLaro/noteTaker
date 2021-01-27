@@ -38,7 +38,7 @@ module.exports = function (app) {
             } else {
                 noteArray = JSON.parse(data)
                 const id = req.params.id;
-                const noteIndex = noteArray.findIndex(n => n.id == id);
+                const noteIndex = noteArray.findIndex(note => note.id == id);
                 noteArray.splice(noteIndex, 1);
                 res.json(noteArray)
             
